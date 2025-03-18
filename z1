@@ -1,0 +1,36 @@
+#include <iostream>
+
+void z1() {
+    int n;
+    std::cin>> n;
+    for (unsigned int i = 0; i < n; i++) {
+        std::cout<<"123";
+        if (i+1 !=n) std::cout<<"456789";
+    }
+}
+    void z2() {
+    int n;
+    std::cin>>n;
+    for (unsigned int i = 0; i < n;) {
+        std::cout<<"3";
+        i++;
+        if (i !=n) std::cout<<"7";
+        i++;
+    }
+}
+void z3() {
+    int n;
+    std::cin>>n;
+    for (unsigned int i = 0; i < n; i++) {
+        for (unsigned int j = n; j > i; j--) {
+            std::cout<<j;
+        }
+        std::cout<<std::endl;
+
+
+    }
+}
+int main()
+    {
+    z3();
+    return 0;
